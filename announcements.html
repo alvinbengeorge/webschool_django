@@ -44,33 +44,13 @@
       <section id="right-section">
         <h1 class="section-heading">Announcements</h1>
         <div class="announcements">
+          {% for announcement in announcements %}
           <div class="announcement">
-            <h2 class="announcement-title">Lorem Ipsum Dolor</h2>
+            <h2 class="announcement-title">{{announcement[0]}}</h2>
             <p class="announcement-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur porro recusandae corporis alias harum animi accusamus
-              iusto? Eligendi officiis, quia nisi dolorum, sed blanditiis
-              similique fuga dolore, incidunt modi quibusdam! Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Optio facere eligendi
-              accusamus, ea ut illo officiis, voluptate alias atque vitae
-              aliquam dolores necessitatibus explicabo eaque maiores excepturi,
-              veritatis qui facilis.
+              {{announcement[1]}}
             </p>
-            <span class="announcement-date"> 27th January, 2020 </span>
-          </div>
-          <div class="announcement">
-            <h2 class="announcement-title">Lorem Ipsum Dolor</h2>
-            <p class="announcement-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur porro recusandae corporis alias harum animi accusamus
-              iusto? Eligendi officiis, quia nisi dolorum, sed blanditiis
-              similique fuga dolore, incidunt modi quibusdam! Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Optio facere eligendi
-              accusamus, ea ut illo officiis, voluptate alias atque vitae
-              aliquam dolores necessitatibus explicabo eaque maiores excepturi,
-              veritatis qui facilis.
-            </p>
-            <span class="announcement-date"> 27th January, 2020 </span>
+            <span class="announcement-date">{{announcement[2]}}</span>
           </div>
         </div>
       </section>
