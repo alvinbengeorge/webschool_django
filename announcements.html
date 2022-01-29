@@ -46,11 +46,11 @@
         <div class="announcements">
           {% for announcement in announcements %}
           <div class="announcement">
-            <h2 class="announcement-title">{{announcement[0]}}</h2>
+            <h2 class="announcement-title">{{announcement.title}}</h2>
             <p class="announcement-description">
-              {{announcement[1]}}
+              {{announcement.description}}
             </p>
-            <span class="announcement-date">{{announcement[2]}}</span>
+            <span class="announcement-date">{{announcement.date}}</span>
           </div>
         </div>
       </section>
