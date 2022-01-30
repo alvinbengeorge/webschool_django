@@ -70,7 +70,7 @@ h1 {
 
 .active,
 .active:hover {
-  background-color: #444;
+  background-color: #444 !important;
   color: white;
 }
 
@@ -180,4 +180,40 @@ footer:hover {
 
 .class a:hover {
   background-color: #222;
+}
+
+.hl {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.new-document,
+.homework-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.homework-form {
+  margin-top: 10px;
+}
+
+.new-document button,
+.homework-form button {
+  font-size: 13px;
+  padding: 10px 15px;
+  width: fit-content;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.new-document button:hover,
+.homework-form button:hover {
+  background-color: #222;
+  cursor: pointer;
 }
