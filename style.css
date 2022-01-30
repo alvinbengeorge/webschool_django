@@ -95,19 +95,35 @@ footer:hover {
 
 .announcements,
 .homeworks,
-.classes {
+.classes,
+.documents {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
+.documents {
+  row-gap: 10px;
+}
+
 .announcement,
 .homework,
-.class {
+.class,
+.document {
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: var(--shadow);
   -webkit-font-smoothing: antialiased;
+}
+
+.document {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.document i {
+  cursor: pointer;
 }
 
 .homework *,
