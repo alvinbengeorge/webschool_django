@@ -70,11 +70,11 @@ h1 {
 
 .active,
 .active:hover {
-  background-color: #444 !important;
-  color: white !important;
+  background-color: #444;
+  color: white;
 }
 
-div.active a {
+.active a {
   color: white !important;
 }
 
@@ -94,26 +94,30 @@ footer:hover {
 }
 
 .announcements,
-.homeworks {
+.homeworks,
+.classes {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
 .announcement,
-.homework {
+.homework,
+.class {
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: var(--shadow);
   -webkit-font-smoothing: antialiased;
 }
 
-.homework * {
+.homework *,
+.class * {
   display: block;
 }
 
 .announcement-title,
-.homework-title {
+.homework-title,
+.class-title {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 5px 0;
@@ -121,14 +125,43 @@ footer:hover {
 }
 
 .announcement-description,
-.homework-description {
+.homework-description,
+.class-description {
   font-size: 15px;
   margin: 0 0 8px 0;
 }
 
 .announcement-date,
 .homework-start,
-.homework-due {
+.homework-due,
+.class-date,
+.class-time {
   font-size: 14px;
   color: rgb(150, 150, 150);
+}
+
+.class-date,
+.class-time {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.class-date {
+  margin-top: 5px;
+}
+
+.class a {
+  margin-top: 10px;
+  background-color: #444;
+  cursor: pointer;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 14px;
+}
+
+.class a:hover {
+  background-color: #222;
 }
