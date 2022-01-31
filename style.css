@@ -290,10 +290,38 @@ footer:hover {
   text-decoration: none;
 }
 
-.ar-card-bottom a:hover {
+.ar-card-bottom a:hover,
+.edit-profile-button:hover {
   background-color: #222;
 }
 
 .ar-card-text {
   font-size: 15px;
+}
+
+.edit-profile-button {
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 10px;
+  margin: 20px 0;
+}
+
+.profile-detail {
+  display: contents;
+}
+
+.profile-detail-label {
+  font-weight: bold;
+  color: #222;
 }
