@@ -227,13 +227,15 @@ footer:hover {
 .new-announcement-form input,
 .new-announcement-form textarea,
 .new-homework-form input,
-.new-homework-form textarea {
+.new-homework-form textarea,
+.new-announcement-form select,
+.new-homework-form select {
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid #aaa;
-  resize: vertical;
 }
 
-input[type="date"] {
-  resize: none;
+.new-announcement-form textarea,
+.new-homework-form textarea {
+  resize: vertical;
 }
