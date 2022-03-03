@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  database:
+    platform: linux/x86_64
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: webschool_db
+    volumes:
+      - dbdata:/var/lib/mysql
+    
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/code
+    depends_on:
+      - database
+
+volumes:
+  dbdata:
+  
